@@ -7,13 +7,43 @@
 //
 
 import UIKit
+import MapKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, MKMapViewDelegate {
+    
+    var personnage = Personnage()
 
+    @IBOutlet weak var photo: UIButton!
+    
+    @IBOutlet weak var name: UILabel!
+    
+    @IBOutlet weak var telephone: UILabel!
+    
+    @IBOutlet weak var address: UITextView!
+    
+    @IBOutlet weak var latitude: UILabel!
+    
+    @IBOutlet weak var longitude: UILabel!
+    
+    @IBOutlet var map: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.photo.setBackgroundImage(UIImage(named: personnage.photo), for: UIControlState.normal)
+        self.name.text = personnage.firstName + " " + personnage.name
+        self.telephone.text = personnage.telephone
+        self.address.text = personnage.address
+        self.latitude.text = "latitude: " + String(personnage.latitude)
+        self.longitude.text = "longitude: " + String(personnage.longitude)
+        
+        let coordinaten = CLLocationCoordinate2DMake(personnage.latitude, personnage.longitude)
+        let annotation: Annotation = Annotation(coordinate: coordinaten, name: personnage.firstName + " " + personnage.name)
+        self.map.addAnnotation(annotation)
+        
+        let region = MKCoordinateRegion(center: coordinaten, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        map.setRegion(region, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

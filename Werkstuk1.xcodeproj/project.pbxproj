@@ -19,6 +19,8 @@
 		FA9592D42126D90F0070B4AB /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9592D32126D90F0070B4AB /* TableViewCellController.swift */; };
 		FA9592D62126D92B0070B4AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9592D52126D92B0070B4AB /* DetailViewController.swift */; };
 		FA9592D82126D9370070B4AB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9592D72126D9370070B4AB /* ImageViewController.swift */; };
+		FA9592DA212706BE0070B4AB /* Personnage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9592D9212706BE0070B4AB /* Personnage.swift */; };
+		FA9592DC2127325A0070B4AB /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9592DB2127325A0070B4AB /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FA9592D32126D90F0070B4AB /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
 		FA9592D52126D92B0070B4AB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FA9592D72126D9370070B4AB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		FA9592D9212706BE0070B4AB /* Personnage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personnage.swift; sourceTree = "<group>"; };
+		FA9592DB2127325A0070B4AB /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				FA9592D72126D9370070B4AB /* ImageViewController.swift */,
 				FA95929E2126D0970070B4AB /* AppDelegate.swift */,
 				FA9592A52126D0980070B4AB /* Assets.xcassets */,
+				FA9592D9212706BE0070B4AB /* Personnage.swift */,
+				FA9592DB2127325A0070B4AB /* Annotation.swift */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -290,6 +296,8 @@
 				FA9592D62126D92B0070B4AB /* DetailViewController.swift in Sources */,
 				FA95929F2126D0970070B4AB /* AppDelegate.swift in Sources */,
 				FA9592D82126D9370070B4AB /* ImageViewController.swift in Sources */,
+				FA9592DA212706BE0070B4AB /* Personnage.swift in Sources */,
+				FA9592DC2127325A0070B4AB /* Annotation.swift in Sources */,
 				FA9592D42126D90F0070B4AB /* TableViewCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
