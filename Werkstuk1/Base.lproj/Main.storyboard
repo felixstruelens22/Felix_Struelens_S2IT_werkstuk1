@@ -113,7 +113,7 @@
                                 <rect key="frame" x="132" y="114" width="150" height="150"/>
                                 <state key="normal" backgroundImage="Cooper"/>
                                 <connections>
-                                    <segue destination="RZK-qY-gdd" kind="show" identifier="" id="5Hw-1M-aam"/>
+                                    <segue destination="RZK-qY-gdd" kind="show" identifier="naarImage" id="5Hw-1M-aam"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dale Cooper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmi-la-C9v">
@@ -249,6 +249,9 @@
                             <constraint firstItem="eID-gY-dAt" firstAttribute="trailing" secondItem="WrS-3i-l2r" secondAttribute="trailing" id="XiP-Qp-lWc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photo" destination="eID-gY-dAt" id="RZg-ne-J8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFw-J7-8I1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
