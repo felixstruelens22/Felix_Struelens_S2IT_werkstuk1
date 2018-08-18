@@ -12,8 +12,6 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
-    var personnage = [Personnage]()
-    
     var locationManager = CLLocationManager()
     
     @IBOutlet weak var map: MKMapView!
@@ -23,12 +21,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         locationManager.requestAlwaysAuthorization()
         
-        locationManager.startUpdatingLocation()
-        
-        for value in personnage {
-            let coordinaten = CLLocationCoordinate2DMake(value.latitude, value.longitude)
-            let annotation: Annotation = Annotation(coordinate: coordinaten, name: value.firstName + " " + value.name)
-            self.map.addAnnotation(annotation)
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
         }
     }
 
