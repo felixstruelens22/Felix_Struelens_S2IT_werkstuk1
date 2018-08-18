@@ -114,17 +114,12 @@
 			isa = PBXGroup;
 			children = (
 				FA9592A22126D0970070B4AB /* Main.storyboard */,
-				FA9592A72126D0980070B4AB /* LaunchScreen.storyboard */,
-				FA9592AA2126D0980070B4AB /* Info.plist */,
-				FA9592D12126D8BC0070B4AB /* MapViewController.swift */,
-				FA9592CF2126D8210070B4AB /* TableViewController.swift */,
-				FA9592D32126D90F0070B4AB /* TableViewCellController.swift */,
-				FA9592D52126D92B0070B4AB /* DetailViewController.swift */,
-				FA9592D72126D9370070B4AB /* ImageViewController.swift */,
+				FA9592DD212753030070B4AB /* ViewControllers */,
+				FA9592DE2127531C0070B4AB /* ModelClasses */,
 				FA95929E2126D0970070B4AB /* AppDelegate.swift */,
+				FA9592AA2126D0980070B4AB /* Info.plist */,
+				FA9592A72126D0980070B4AB /* LaunchScreen.storyboard */,
 				FA9592A52126D0980070B4AB /* Assets.xcassets */,
-				FA9592D9212706BE0070B4AB /* Personnage.swift */,
-				FA9592DB2127325A0070B4AB /* Annotation.swift */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -153,6 +148,27 @@
 				FA9592CD2126D7160070B4AB /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9592DD212753030070B4AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA9592D12126D8BC0070B4AB /* MapViewController.swift */,
+				FA9592CF2126D8210070B4AB /* TableViewController.swift */,
+				FA9592D32126D90F0070B4AB /* TableViewCellController.swift */,
+				FA9592D52126D92B0070B4AB /* DetailViewController.swift */,
+				FA9592D72126D9370070B4AB /* ImageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA9592DE2127531C0070B4AB /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FA9592D9212706BE0070B4AB /* Personnage.swift */,
+				FA9592DB2127325A0070B4AB /* Annotation.swift */,
+			);
+			path = ModelClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
