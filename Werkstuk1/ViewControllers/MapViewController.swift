@@ -57,7 +57,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let coordinaten = CLLocationCoordinate2DMake(value.latitude, value.longitude)
             let annotation: Annotation = Annotation(coordinate: coordinaten, title: value.firstName + " " + value.name)
             map.addAnnotation(annotation)
-            map.selectAnnotation(annotation, animated: true)
         }
     }
 
@@ -67,7 +66,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let center = CLLocationCoordinate2D(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.09, longitudeDelta: 0.09))
         
         mapView.setRegion(region, animated: true)
     }
