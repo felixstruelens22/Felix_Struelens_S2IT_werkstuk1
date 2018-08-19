@@ -34,7 +34,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.longitude.text = "longitude: " + String(personnage.longitude)
         
         let coordinaten = CLLocationCoordinate2DMake(personnage.latitude, personnage.longitude)
-        let annotation: Annotation = Annotation(coordinate: coordinaten, name: personnage.firstName + " " + personnage.name)
+        let annotation: Annotation = Annotation(coordinate: coordinaten, title: personnage.firstName + " " + personnage.name)
         self.map.addAnnotation(annotation)
         
         let region = MKCoordinateRegion(center: coordinaten, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))

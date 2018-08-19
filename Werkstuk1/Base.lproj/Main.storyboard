@@ -38,6 +38,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Six-rD-Csz"/>
+                    <connections>
+                        <outlet property="map" destination="T4i-JM-bqf" id="nWO-PO-ioR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPj-Ia-j47" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,7 +303,6 @@
         <!--Navigation Controller-->
         <scene sceneID="SZv-b3-bnP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SK3-Ja-4Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UvS-3X-Kgh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="Mf9-Tb-4e9"/>
                     <toolbarItems/>
@@ -313,6 +315,7 @@
                         <segue destination="Tkn-Ux-AFW" kind="relationship" relationship="rootViewController" id="6oG-bI-V1c"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SK3-Ja-4Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1195.6521739130435" y="-771.19565217391312"/>
         </scene>
